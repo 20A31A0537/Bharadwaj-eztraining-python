@@ -1,0 +1,178 @@
+day4-programs
+
+d={n:n*n for n in range(1,6)}
+print(d)
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+#calucating product prices for 5 units
+old={'rice':20,'wheat':30,'dal':40}
+new={product:price*5 for (product,price)in old.items()}
+print(new)
+{'rice': 100, 'wheat': 150, 'dal': 200}
+
+#with checks
+real={"pavan":20,"revanth":30,"bhradwaj":40}
+now={name:age for (name,age)in real.items() if age>15}
+print(now)
+{'pavan': 20, 'revanth': 30, 'bhradwaj': 40}
+
+program1:-
+
+create a list with 9 customers and display dictionary which as customer name along with discounts for them from a  particular shop
+import random
+customer_name=["pavan","revanth","bharadwaj","uday","mahesh","sai","satish","vamsi","siva"]
+customer_dict={names:random.randint(1,100) for names in customer_name}
+print(customer_dict)
+{'pavan': 83, 'revanth': 11, 'bharadwaj': 36, 'uday': 99, 'mahesh': 87, 'sai': 57, 'satish': 94, 'vamsi': 81, 'siva': 49}
+
+
+program2:-
+
+import random
+students=["pavan","revanth","bharadwaj","uday","mahesh"]
+totalmarks={score:(random.randint(300,500))/5 for score in students}
+print(totalmarks)
+output:-
+{'pavan': 81.8, 'revanth': 77.4, 'bharadwaj': 98.2, 'uday': 70.8, 'mahesh': 78.0}
+
+program3:-
+get one string with one input along with char & find& display whther char is present in string or not
+
+x=input("enter a string:").split( )
+ch=input ("enter a character:")
+for i in range(len(x)):
+    if ch==x[i]:
+        print("character is in the string",ch)
+    else:
+        print("character is not in the string",ch)
+output:-
+enter a string:p a v a n
+enter a character:n
+character is not in the string n
+character is not in the string n
+character is not in the string n
+character is not in the string n
+character is in the string n
+
+model-2
+str=input("enter a string")
+chr=input("enter a charcter")
+a="yes" if str in chr else "no"
+print(a)
+
+output:-
+enter a stringpavan
+enter a charcterm
+no
+
+program4:-
+check whether the string is palindrome or not
+n=input("enter a string")
+a=0
+x=len(n)-1
+while a<=x:
+    if n[a]!=n[x]:
+        print("it is not plandrome")
+        break
+    else:
+        a+=1
+        x-=1
+        print("it is plandrome")
+        break
+
+output:-
+enter a stringpop
+it is plandrome
+enter a stringpavan
+it is not plandrome
+
+
+program5:-
+after get the one string as input ,check your string contains the space or not if yes  count no of space & print it
+
+s=input("enter the string")
+v=0
+for i in range(len(s)):
+    if s[i]==' ':
+        v+=1
+        print("space is present")
+        
+    else:
+        print("space is not present")
+print(v)
+
+output:-
+enter the stringpavan
+space is not present
+space is not present
+space is not present
+space is not present
+space is not present
+0
+
+enter the stringpa  v  a n
+space is not present
+space is not present
+space is present
+space is present
+space is not present
+space is present
+space is present
+space is not present
+space is present
+space is not present
+5
+
+program6:-
+create a list as vowels and get a string and count.
+s=input("enter a string:")
+l=['a','e','i','o','u','A','E','I','O','U']
+count=0
+for i in range (len(s)):
+    for j in range(len(l)):
+        if s[i]==l[j]:
+            count+=1
+            print("vowels",l[j])
+            
+print(count)
+
+output:-
+enter a string:pavan
+vowels a
+vowels a
+2
+
+
+#math module
+import math
+print("ceil 12.5:", math.ceil(12.5))
+ceil 12.5: 13
+
+print("floor 12.5:", math.floor(12.5))
+floor 12.5: 12
+
+
+print("sqrt 345:", math.sqrt(345))
+sqrt 345: 18.57417562100671
+
+print("factorial 4:", math.factorial(4))
+factorial 4: 24
+
+print("power 4,5:", math.pow(4,5))
+power 4,5: 1024.0
+
+print("remainder 4,5:", math.fmod(4,5))
+remainder 4,5: 4.0
+
+a,b=divmod(1,12)
+print(a,b)
+0 1
+
+
+
+
+
+
+
+
+

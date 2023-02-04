@@ -1,0 +1,145 @@
+
+DAY 5:
+
+programs:
+
+programs1:-
+1.lemons program function using type 1.
+def lemons():
+    x=int(input("no of lemons u have"))
+    if x==21:
+        print("lemons are suffient")
+    elif x<21:
+        y=21-x
+        print(y,"are requried")
+    elif x>21:
+         z=x-21
+         print(z,"are remaing")
+         
+lemons()         
+    
+output:-
+no of lemons u have24
+3 are remaing
+
+programs2:-
+2.find factors os given number using functions tpye 2
+def factors(n1):
+    for i in range(1,n1+1):
+        if n1%i==0:
+            print("factor is",i)
+
+n=int(input("enter a number"))   
+factors(n)
+
+output:-
+enter a number7
+factor is 1
+factor is 7
+
+programs3:-
+3.print multipilction table using type 3
+def table(n):
+     for i in range(1,21):
+        print(i,"x",n,"=",i*n)
+        
+    
+multi=table(int(input("enter a number")))
+print(multi)
+
+output:-
+enter a number4
+1 x 4 = 4
+2 x 4 = 8
+3 x 4 = 12
+4 x 4 = 16
+5 x 4 = 20
+6 x 4 = 24
+7 x 4 = 28
+8 x 4 = 32
+9 x 4 = 36
+10 x 4 = 40
+11 x 4 = 44
+12 x 4 = 48
+13 x 4 = 52
+14 x 4 = 56
+15 x 4 = 60
+16 x 4 = 64
+17 x 4 = 68
+18 x 4 = 72
+19 x 4 = 76
+20 x 4 = 80
+None
+
+programs4:-
+4.find out sum of digits of given number using type 4
+
+def digits(n):
+    sum=0
+    while n!=0:
+        rem=n%10
+        sum=sum+rem
+        n=n//10
+    return sum
+
+n=int(input("enter a number"))
+res=digits(n)
+print(res)
+
+output:-
+enter a number2023
+7
+
+progam5:-(recursive fuction)
+
+def fact(n):
+    if n==0:
+        return 1
+    return n* fact(n-1)
+result=fact(5)
+print(result)
+
+output:-
+120
+
+program6:-
+
+n=int(input("enter a number:"))
+a=0
+b=1
+sum=0
+count=1
+
+while(count<=n):
+    print(sum,end=" ")
+    count += 1
+    a=b
+    b=sum
+    sum=a+b
+output:-
+enter a number:12
+0 1 1 2 3 5 8 13 21 34 55 89 
+
+program7:-
+def neon(n):
+    sum=0
+    while n!=0:
+        rem =n%10
+        n=n//10
+        sum=sum+rem
+    if sum ==r:
+        print("neon")
+    else:
+        print("not a neon")
+
+
+r= int(input("enter a number"))
+n= r*r
+neon(n)
+
+output:-
+enter a number23
+not a neon
+
+    
+

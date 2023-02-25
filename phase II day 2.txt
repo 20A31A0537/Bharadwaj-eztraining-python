@@ -1,0 +1,37 @@
+day 2:
+
+Polymorphism: one item or same item used for different purpose
+-> types:
+       1.overloading:
+                   I.operater overloading:
+                         ex:5+10=15       integer addition with + operator
+                            "5"+"10"=510   string concatination with + operator
+                   II.method overloading
+       2.over riding:if a method is deffective cannot be used inside derived class 
+                      it will take from its base class or parent class 
+***********************************************************************************************
+
+Data Stuctures:
+                LINEAR:: Array/linked list/Stack/Matrix (storing data seuentially)
+                         array is STATIC and LIST,STACK,QUEUE is DYNAMIC
+                NON LINEAR: Binary Tree/Heap/Hash Table/Graph (no sequential style required)
+                
+  ->Linked list:real time example train 
+                as the name says list of items which are linked with another is called as linked list.
+                Every list ha node and each node has 2 segments,
+                       1.Data
+                       2.Address
+                **types:
+                        1.singly
+                        2.double
+                        3.circular
+Creating Linked list:
+Step1: Create the node 
+Step2: Partition the node with 2 segments data and none
+step3: Add value into the blank node
+Step4: Mark the node as head
+Step5: Create the next node by following the above steps
+Step6: Establish link between first node and second node
+
+Displaying Linked List:Traversal is required from first node till tail node in order to display
+                       existing linked list

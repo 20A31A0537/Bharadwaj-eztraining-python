@@ -1,7 +1,7 @@
 boy=input("Enter boy name: ").lower()
 girl=input("Enter girl name:").lower()
-boy=boy.replace(" ","")
-girl=girl.replace(" ","")
+boy=boy.replace(" "," ")
+girl=girl.replace(" "," ")
 print(boy)
 print(girl)
 

@@ -1,0 +1,37 @@
+**********************TREE*************************************************
+tree  contains the parent node also called root of the node and where childern node called it as leaf node.
+tree alwys check from root->leftsubtree->rightsubtree
+In  top of the tree takens downwards from root to leafnode.
+In  depth of the tree takens upwards from leafnode to root. 
+A BINARY TREE having the node that contains the maximum only the two chidren
+
+ BINARY TREE TRANVERSAL:-
+preorder-->root-->left-->right-(or)RLR(OR)DLR
+postorder-->left-->right-->root-(or)LRR(OR)LRD
+inorder-->left-->root-->right-(or)LRR(OR)LDR
+
+LDR-Means root or data
+these order are depth first search
+
+
+TYPES OF BINARY TREE
+1.FULL BINARY TREE:-all node will have the zero and two child.
+2.DEGENRATE TREE:-internal node has the onechild or zero child.
+3.SKEWED BINARY TREE:-The tree follows one direction completely either left or right
+these are twio types:-
+1.left skewed binary tree
+2.right skewed binary tree
+
+### other based on the level:-
+1.complete level:-every level should be complete
+in last level if its in complete nodes should present at extreme left side
+
+2.perfect level:-
+all internal nodes has two chidren and leaf node should has two children
+
+3.balanced level:-for the all the node height(left subtree)-height(right subtree) can be 0 or 1 then it is called as balanced tree.
+
+****BINARY SERACH TREE***************
+all the leftside element should be lesserthan its parents.
+all the rightside elements should be greater than its parents.
+

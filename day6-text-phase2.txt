@@ -1,0 +1,57 @@
+*********************************GRAPHS***************************************************
+graphs-non linear structure.
+adjancey connect should be there must be root or path.
+graph=combination of vertices and edges
+Vertices: Vertices are the fundamental units of the graph
+Sometimes, vertices are also known as vertex or nodes.
+Every node/vertex can be labeled or unlabelled.
+Edges: Edges are drawn or used to connect two nodes of the graph.
+It can be ordered pair of nodes in a directed graph.
+Edges can connect any two nodes in any possible way.
+There are no rules. Sometimes, edges are also known as arcs. 
+Every edge can be labeled/unlabelled.
+types of graphs
+1.undirected graphs
+2.directed graphs
+3.weigh graphs
+
+undirected graphs:-
+0-----1
+| \   | 
+|  \  |  
+|   \ |   
+2-----3 
+
+v={0,1,2,3}
+
+e={(0,1),(0,3),(1,3),(3,2)}
+directed graphs:-
+
+0----->1
+| \    | 
+|  \   |  
+|   \  |   
+2<-----3  
+
+v={0,1,2,3}
+e={(0,1),(3,2)}
+
+weighted graph:-
+     1
+  0-----1
+  | \   | 
+3 |  \1 | 2 
+  |   \ |  
+  2-----3  
+     2
+
+v={0,1,2,3}
+e={(0,1),(0,3),(1,3),(3,2)}
+w={(0,1)=1,(0,2)=3,(0,3)=1)}
+
+
+
+REPRESENTATION OF GRAPHS
+1.LIST OF EDGES
+2.ADJANCEY LIST
+3.ADJANCEY MATRIX
